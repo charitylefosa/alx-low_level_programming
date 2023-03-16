@@ -1,2 +1,13 @@
 #!/bin/bash
-export CFILE=0-main.c ; ./0-preprocessor
+#include <stdio.h>
+
+/**
+* main - Entry point
+*
+* Return: Alway 0 (Success)
+*/
+int main(void)
+{
+	fprintf(c, "%c",$CFILE);
+	return (0);
+}
