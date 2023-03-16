@@ -1,2 +1,2 @@
 #!/bin/bash
-printf("%c",'CFILE');
+gcc -E @CFILE -O C
