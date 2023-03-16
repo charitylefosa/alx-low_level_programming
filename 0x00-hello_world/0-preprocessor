@@ -1,2 +1,2 @@
 #!/bin/bash
-fprintf()
+fprintf(c, "$CFILE")
