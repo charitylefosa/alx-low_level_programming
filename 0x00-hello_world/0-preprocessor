@@ -1,13 +1,2 @@
 #!/bin/bash
-#include <stdio.h>
-
-/**
-* main - Entry point
-*
-* Return: Alway 0 (Success)
-*/
-int main(void)
-{
-	fprintf(c, "%c",$CFILE);
-	return (0);
-}
+fprintf()
