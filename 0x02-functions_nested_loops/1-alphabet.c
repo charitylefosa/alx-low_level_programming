@@ -7,11 +7,6 @@
  */
 void print_alphabet(void);
 
-int main(void)
-{
-	print_alphabet();
-	return (0);
-}
 /**
  * print_alphabet - prints lowercase alphabet followed by new line.
  */
@@ -25,4 +20,10 @@ void print_alphabet(void)
 		l++;
 	}
 	putchar('\n');
+}
+
+int main(void)
+{
+	print_alphabet();
+	return (0);
 }
