@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<alphabet.h>
 void print_alphabet(void);
 
 /**
