@@ -2,11 +2,16 @@
 /**
  * main - entry point
  *
- * return: 0
+ * Return: Always 0
  */
 void print_alphabet(void);
 
 int main(void)
+{
+	print_alphabet();
+	return (0);
+}
+void print_alphabet(void)
 {
 	char l = 'a';
 
@@ -15,6 +20,5 @@ int main(void)
 		putchar(l);
 		l++;
 	}
-	return (0);
 }
 
