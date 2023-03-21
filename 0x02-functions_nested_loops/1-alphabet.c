@@ -1,10 +1,5 @@
 #include<stdio.h>
-/**
- * main - Entry point
- *
- * Return: Always 0
- *
- */
+#include<alphabet.h>
 void print_alphabet(void);
 
 /**
@@ -21,7 +16,12 @@ void print_alphabet(void)
 	}
 	putchar('\n');
 }
-
+/**
+ * main - Entry point
+ *
+ * Return: Always 0
+ *
+ */
 int main(void)
 {
 	print_alphabet();
