@@ -1,7 +1,7 @@
 #include "main.h"
 /**
 * rev_string - Write a function that reverses a string
-* @s: string var pointer
+* @s: string variable pointer
 */
 void rev_string(char *s)
 {
