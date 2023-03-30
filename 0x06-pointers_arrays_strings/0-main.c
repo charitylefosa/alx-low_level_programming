@@ -3,7 +3,7 @@
 
 /**
 * main - check the code
-*
+* _strcat - Concatenates the string 
 * return: always 0
 */
 
