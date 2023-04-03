@@ -2,7 +2,7 @@
 #include"main.h"
 #include<string.h>
 /*
-*_strchr-locates a character in a string
+*strchr-locates a character in a string
 *@c: character to be searched for
 *@s: string to searched
 *return : first c occurance if c is found inthe string
