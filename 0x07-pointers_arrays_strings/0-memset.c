@@ -5,7 +5,7 @@
 /**
 *_memset-fills the first bytes of memory pointed with a constant byte
 *@n: first to be filled
-*@b: constant bytes to be added
+*@b: constant bytes to be filledd
 *@s: momery area pointed to
 *Return: the memory area @s
 */
