@@ -14,3 +14,8 @@ void _puts_recursion(char *s)
 	_puts_recursion(s);
 	s = s + 1;
 }
+int main(void)
+{
+	putchar('\n');
+	return (0);
+}
