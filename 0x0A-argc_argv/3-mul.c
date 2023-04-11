@@ -5,6 +5,7 @@
 *@argv: argument vector
 *@argc: argument count
 *Return: 0
+*	1 for Error
 */
 int main(int argc, char *argv[])
 {
@@ -13,6 +14,7 @@ int main(int argc, char *argv[])
 	if (argc != 3)
 	{
 		printf("Error");
+		return (1);
 	}
 	a = atoi(argv[1]);
 	b = atoi(argv[2]);
