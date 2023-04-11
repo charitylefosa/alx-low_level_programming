@@ -5,7 +5,6 @@
 *@argv: argument vector
 *@argc: argument count
 *Return: 0
-*	1 for Error
 */
 int main(int argc, __attribute__((unused)) char *argv[])
 {
@@ -13,7 +12,7 @@ int main(int argc, __attribute__((unused)) char *argv[])
 
 	if (argc != 3)
 	{
-		return (1);
+		printf("Error");
 	}
 	a = atoi(argv[1]);
 	b = atoi(argv[2]);
