@@ -3,7 +3,6 @@
 #include"main.h"
 /**
 *malloc_checked- allocates memory using malloc
-*@a: pointer where memory is allocated to
 *@b: integer to be allocated memery for
 *Return: @a
 *	98 if NULL
