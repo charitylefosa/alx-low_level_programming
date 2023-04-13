@@ -2,11 +2,8 @@
 #include<stdlib.h>
 #include"main.h"
 /**
-*
-*
-*
-*
-*
+*malloc_checked- allocates memory using malloc
+*@a: pointer to be returned
 */
 void *malloc_checked(unsigned int b)
 {
