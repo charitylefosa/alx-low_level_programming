@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 		printf("0\n");
 		return (0);
 	}
-	sprintf(command, "echo 'scale=10; %d * %d' | bc", num1, num2);
+	sprintf(command, "echo 'scale=10000; %d * %d' | bc", num1, num2);
 	system(command);
 	return (0);
 }
