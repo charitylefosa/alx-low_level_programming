@@ -76,14 +76,10 @@ void print_all(const char * const format, ...)
 		{"s", print_string},
 	};
 	va_list args;
-	int i;
-	int j;
-	char *separator;
+	int i = 0, j = 0;
+	char *separator = "";
 
 	va_start(args, format);
-
-	separator = "";
-	i = 0;
 
 	while (format && (*(format + i)))
 	{
