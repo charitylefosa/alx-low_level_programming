@@ -1,10 +1,11 @@
 #include<stdio.h>
 #include<stdarg.h>
 #include"variadic_functions.h"
-typedef struct {
+typedef struct
+{
 	char *symbol;
 	void (*print)(va_list);
-}printer_t;
+} printer_t;
 /**
 * print_char- prints character
 *@arg: list of arguments pointing to character to be printed
@@ -71,12 +72,12 @@ void print_all(const char * const format, ...)
 	};
 	va_list args;
 	int i;
+	int j;
+	char *separator;
 
 	va_start(args, format);
 
-	int j;
-	char *separator = "";
-
+	separator = "";
 	i = 0;
 
 	while (format && (*(format + i)))
@@ -92,7 +93,7 @@ void print_all(const char * const format, ...)
 			funcs[j].print(args);
 			separator = ", ";
 		}
-		j++;
+		i++;
 	}
 	printf("\n");
 	va_end(args);
