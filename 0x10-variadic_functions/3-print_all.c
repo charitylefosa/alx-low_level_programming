@@ -6,6 +6,11 @@ typedef struct
 	char *symbol;
 	void (*print)(va_list);
 } printer_t;
+void print_char(va_list arg);
+void print_int(va_list arg);
+void print_float(va_list arg);
+void print_string(va_list arg);
+void print_all(const char * const format, ...);
 /**
 * print_char- prints character
 *@arg: list of arguments pointing to character to be printed
