@@ -2,8 +2,8 @@
 #include<stdio.h>
 
 /**
-*size_t - prints all the elements of a list_t list
-*list_t: the list to be printed
+*print_list- prints all the elements of a list_t list
+*@h: the list_t list
 *
 *Return: number of nodes
 */
