@@ -50,7 +50,7 @@ int main(int argc, char *argv[])
 			error(-1, 0, argv);
 		nwr = write(file_to, ptr, readd);
 		if (nwr == -1)
-			error(file_f, -1, argv);
+			error(0, -1, argv);
 	}
 	err_c = close(file_f);
 	if (err_c == -1)
