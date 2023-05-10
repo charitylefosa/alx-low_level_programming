@@ -167,6 +167,7 @@ void print_type(unsigned int e_type, unsigned char *e_ident)
 			break;
 		case ET_CORE:
 			printf("CORE (Core file)\n");
+			break;
 		default:
 			printf("<unknown: %x>\n", e_type);
 	}
@@ -218,14 +219,14 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 	{
 		free(header);
 		close_elf(o);
-		printf(STDERR_FILENO, "Error: '%s': No such file\n", argv[1]);
+		dprintf(STDERR_FILENO, "Error: '%s': No such file\n", argv[1]);
 		exit(98);
 	}
 	check_elf(header->e_ident);
 	printf("ELF Header:\n");
 	print_magic(header->e_ident);
 	print_class(header->e_ident);
-	print_data(header->e_ident);
+	print_date(header->e_ident);
 	print_version(header->e_ident);
 	print_osabi(header->e_ident);
 	print_abi(header->e_ident);
