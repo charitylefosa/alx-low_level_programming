@@ -8,20 +8,19 @@
 */
 unsigned int binary_to_unit(const char *b)
 {
-	unsigned int num;
+	unsigned int num = 0, mult = 1;
+	int len;
 
-	num = 0;
-	if (!b)
-	{
+	if (*b == '\0')
 		return (0);
-	}
-	while (*b)
+	for (len = 0; b[len];)
+		len++;
+	for (len -= 1; len >= 0; len--)
 	{
-		num <<= 1;
-		if (*b++ == '1')
-		{
-			num |= 1;
-		}
+		if (b[len] != '0' && b[len] != '1')
+			return (0);
+		num += (b[len] - '0') * mult;
+		mult *= 2;
 	}
 	return (num);
 }
