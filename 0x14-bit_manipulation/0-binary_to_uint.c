@@ -1,5 +1,11 @@
 #include "main.h"
-
+/**
+*binary_to_unit- converts a binary number to an unsigned int
+*@b: pointer to string of 0 or 1 characters
+*
+*Return: -0 if b is NULL or conatains not 0 or 1
+*	converted number otherwise
+*/
 unsigned int binary_to_unit(const char *b)
 {
 	unsigned int num = 0, mult = 1;
