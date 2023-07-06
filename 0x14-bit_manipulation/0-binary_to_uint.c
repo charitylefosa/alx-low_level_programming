@@ -6,7 +6,7 @@
 *Return: -0 if b is NULL or conatains not 0 or 1
 *	converted number otherwise
 */
-unsigned int binary_to_unit(const char *b)
+unsigned int binary_to_uint(const char *b)
 {
 	unsigned int num;
 
