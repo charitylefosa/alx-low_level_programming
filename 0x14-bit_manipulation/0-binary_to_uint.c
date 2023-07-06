@@ -18,10 +18,11 @@ unsigned int binary_to_uint(const char *b)
 	while (*b)
 	{
 		num <<= 1;
-		if (*b++ == '1')
+		if (*b == '1')
 		{
 			num |= 1;
 		}
+		b++;
 	}
 	return (num);
 }
